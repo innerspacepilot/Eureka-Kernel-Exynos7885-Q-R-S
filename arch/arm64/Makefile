@@ -43,7 +43,7 @@ ifeq ($(cc-name),clang)
 # TODO: revert when this is fixed in LLVM.
 KBUILD_CFLAGS	+= -mno-implicit-float
 else
-KBUILD_CFLAGS	+= -mgeneral-regs-only
+#KBUILD_CFLAGS	+= -mgeneral-regs-only
 endif
 KBUILD_CFLAGS	+= $(lseinstr)
 KBUILD_CFLAGS	+= -fno-pic
